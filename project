@@ -1,0 +1,9 @@
+import pandas as pd
+data = pd.read_csv("Video_Games_Sales_as_at_22_Dec_2016.csv")
+data.head()
+#ce jeu de donnés décrit le nom des jeux vidéos, la plateforme, la date de parution, le genre, l'éditeur du jeu, les ventes par pays ainsi que global, les critiques
+data.dtypes
+import seaborn as sns
+sns.set()
+sns.relplot(x="Name", y="Global_Sales", col="Age",
+            data=data);
